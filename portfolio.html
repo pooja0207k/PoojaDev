@@ -59,14 +59,13 @@
             color: white;
         }
 
-        /* Main Section */
+        /* Main Content Section */
         .container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             padding: 80px 20px;
             background-color: #fff;
-            flex-direction: column;
             text-align: center;
         }
 
@@ -76,7 +75,7 @@
         }
 
         .left h1, .left h3 {
-            font-size: 24px; /* Same size for all headings */
+            font-size: 24px;
             color: #333;
             margin-bottom: 20px;
         }
@@ -86,7 +85,7 @@
             line-height: 1.6;
             color: #555;
             margin-bottom: 30px;
-            text-align: justify; /* Justify text */
+            text-align: justify;
         }
 
         /* Portfolio Section */
@@ -105,20 +104,20 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Aligns buttons at the bottom */
+            justify-content: space-between;
         }
 
         .portfolio-item h3 {
-            font-size: 20px; /* Adjusted size */
+            font-size: 20px;
             color: #333;
-            margin-bottom: 10px; /* Uniform margin */
+            margin-bottom: 10px;
         }
 
         .portfolio-item p {
             color: #555;
-            margin: 0; /* Removed margin for alignment */
-            flex-grow: 1; /* Allows the paragraph to take available space */
-            text-align: justify; /* Justify text */
+            margin: 0;
+            flex-grow: 1;
+            text-align: justify;
         }
 
         .portfolio-item a {
@@ -129,6 +128,7 @@
             padding: 8px 16px;
             border-radius: 4px;
             margin-top: 10px;
+            transition: background-color 0.3s;
         }
 
         .portfolio-item a:hover {
@@ -164,7 +164,6 @@
         footer .social-links a:hover img {
             transform: scale(1.1);
         }
-
     </style>
 </head>
 <body>
@@ -189,8 +188,8 @@
             <h1>Welcome to My Portfolio</h1>
             <h3>Explore My Work and Projects</h3>
             <p>
-                "As a Front-End Developer, I have had the opportunity to work on several exciting projects. 
-                Below you will find some of the projects I've worked on, ranging from web development to machine learning applications."
+                As a Front-End Developer, I have had the opportunity to work on several exciting projects. 
+                Below you will find some of the projects I've worked on, ranging from web development to machine learning applications.
             </p>
         </div>
 
@@ -199,7 +198,7 @@
             <!-- Project 1 -->
             <div class="portfolio-item">
                 <h3>Project 1: MakeItTalk: Speaker Aware Head Animation</h3>
-                <p>Developed Python scripts to synchronize head movements with audio cues, ensuring seamless integration. Used libraries like OpenCV and NumPy.</p>
+                <p>Developed Python scripts to synchronize head movements with audio cues, ensuring seamless integration using libraries like OpenCV and NumPy.</p>
                 <a href="https://github.com/pooja0207k/MakeItTalk-Speaker-Aware-Head-Animation">View Project</a>
             </div>
 

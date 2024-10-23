@@ -1,233 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home | Pooja Reddy</title>
-        <base href="https://pooja0207k.github.io/PoojaDev/">
-        <link rel="icon" href="Favicons\favicon.png" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            /* Reset & Body Styling */
-            body {
-                font-family: 'Roboto', sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f9f9f9;
-                color: #333;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Pooja Reddy</title>
+    <link rel="icon" href="Favicons/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-            /* Header Styling */
-            header {
-                background-color: #4c9dff;
-                color: white;
-                text-align: center;
-                padding: 50px 0;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            }
+        /* Header Styling */
+        header {
+            background-color: #4c9dff;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-            header h1 {
-                margin: 0;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 700;
-                font-size: 36px;
-            }
+        header h1 {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+        }
 
-            /* Navigation Bar Styling */
-            nav {
-                background-color: #fff;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-                padding: 15px 50px;
-                text-align: center;
-                position: sticky;
-                top: 0;
-                z-index: 100;
-            }
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: 15px 50px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-            nav a {
-                text-decoration: none;
-                color: #333;
-                font-size: 18px;
-                font-weight: 500;
-                padding: 10px 20px;
-                margin: 0 15px;
-                border-radius: 5px;
-                transition: background-color 0.3s ease;
-            }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 20px;
+            margin: 0 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-            nav a:hover {
-                background-color: #007BFF;
-                color: white;
-            }
+        nav a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
 
-            /* Main Section */
+        /* Main Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 20px;
+            background-color: #fff;
+        }
+
+        .left {
+            max-width: 600px;
+            margin-right: 50px;
+        }
+
+        .left h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .left h3 {
+            font-size: 24px;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        .left p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .left button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .left button:hover {
+            background-color: #218838;
+        }
+
+        .right {
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .right img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        footer .social-links a img {
+            width: 35px;
+            height: 35px;
+            transition: transform 0.3s ease;
+        }
+
+        footer .social-links a:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
             .container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 80px 20px;
-                background-color: #fff;
+                flex-direction: column;
+                text-align: center;
             }
 
             .left {
-                max-width: 600px;
-                margin-right: 50px;
+                margin-right: 0;
+                margin-bottom: 40px;
             }
 
-            .left h1 {
-                font-size: 32px;
-                color: #333;
-                margin-bottom: 20px;
+            nav {
+                padding: 15px 10px;
             }
 
-            .left h3 {
-                font-size: 24px;
-                color: #007BFF;
-                margin-bottom: 20px;
-            }
-
-            .left p {
-                font-size: 18px;
-                line-height: 1.6;
-                color: #555;
-                margin-bottom: 30px;
-            }
-
-            .left button {
-                background-color: #28a745;
-                color: white;
-                padding: 12px 20px;
-                border: none;
-                border-radius: 30px;
+            nav a {
                 font-size: 16px;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
+                margin: 0 10px;
             }
+        }
+    </style>
+</head>
+<body>
 
-            .left button:hover {
-                background-color: #218838;
-            }
+    <!-- Header Section -->
+    <header>
+        <h1>Pooja Reddy Kadari - Portfolio</h1>
+    </header>
 
-            .right {
-                max-width: 400px;
-                text-align: center;
-            }
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="https://pooja0207k.github.io/PoojaDev/index.html">Home</a>
+        <a href="https://pooja0207k.github.io/PoojaDev/about.html">About</a>
+        <a href="https://pooja0207k.github.io/PoojaDev/skills.html">Skills</a>
+        <a href="https://pooja0207k.github.io/PoojaDev/portfolio.html">Portfolio</a>
+        <a href="https://pooja0207k.github.io/PoojaDev/contact.html">Contact</a>
+    </nav>
 
-            .right img {
-                width: 100%;
-                max-width: 350px;
-                height: auto;
-                border-radius: 50%;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            }
-
-            /* Footer Styling */
-            footer {
-                background-color: #fff;
-                padding: 40px 0;
-                text-align: center;
-                box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.05);
-            }
-
-            footer p {
-                font-size: 14px;
-                color: #777;
-            }
-
-            footer .social-links {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                margin-top: 20px;
-            }
-
-            footer .social-links a img {
-                width: 35px;
-                height: 35px;
-                transition: transform 0.3s ease;
-            }
-
-            footer .social-links a:hover img {
-                transform: scale(1.1);
-            }
-
-            /* Responsive Design */
-            @media (max-width: 768px) {
-                .container {
-                    flex-direction: column;
-                    text-align: center;
-                }
-
-                .left {
-                    margin-right: 0;
-                    margin-bottom: 40px;
-                }
-
-                .left button {
-                    width: 100%;
-                }
-            }
-
-        </style>
-    </head>
-    <body>
-
-        <!-- Header Section -->
-        <header>
-            <h1>Pooja Reddy Kadari - Portfolio</h1>
-        </header>
-
-        <!-- Navigation Bar -->
-        <nav>
-            <a href="https://pooja0207k.github.io/PoojaDev/index.html">Home</a>
-            <a href="https://pooja0207k.github.io/PoojaDev/about.html">About</a>
-            <a href="https://pooja0207k.github.io/PoojaDev/skills.html">Skills</a>
-            <a href="https://pooja0207k.github.io/PoojaDev/portfolio.html">Portfolio</a>
-            <a href="https://pooja0207k.github.io/PoojaDev/contact.html">Contact</a>
-        </nav>
-        
-        
-
-        <!-- Main Content Section -->
-        <div class="container" id="home">
-            <div class="left">
-                <h1>Hi, I'm Pooja Reddy Kadari</h1>
-                <h3>Front-End Developer</h3>
-                <p>
-                    "As a Front-End Developer with 2 years of experience in a product-based company, 
-                    I excel in high-pressure situations and possess excellent problem-solving and management skills. 
-                    I am a sincere team player and aspire to lead a team in the coming years."
-                </p>
-                <a href="Pooja Reddy.pdf" download="Pooja Reddy.pdf">
-                    <button>Download Resume</button>
-                </a>
-            </div>
-            <div class="right">
-                <img src="images/pooja_image.jpg" alt="Portrait of Pooja Reddy" loading="lazy">
-            </div>
+    <!-- Main Content Section -->
+    <div class="container" id="home">
+        <div class="left">
+            <h1>Hi, I'm Pooja Reddy Kadari</h1>
+            <h3>Front-End Developer</h3>
+            <p>
+                "As a Front-End Developer with 2 years of experience in a product-based company, 
+                I excel in high-pressure situations and possess excellent problem-solving and management skills. 
+                I am a sincere team player and aspire to lead a team in the coming years."
+            </p>
+            <a href="Pooja Reddy.pdf" download="Pooja Reddy.pdf">
+                <button>Download Resume</button>
+            </a>
         </div>
+        <div class="right">
+            <img src="images/pooja_image.jpg" alt="Portrait of Pooja Reddy" loading="lazy">
+        </div>
+    </div>
 
-        <!-- Footer Section -->
-        <footer>
-            <p>© 2024 Pooja Reddy. All Rights Reserved.</p>
-            <div class="social-links">
-                <a href="mailto:poojak0207reddy@gmail.com">
-                    <img src="images/gmail.png" alt="Gmail">
-                </a>
-                <a href="https://www.linkedin.com/in/pooja-reddy-b965891b1">
-                    <img src="images/linkedin-icon-logo.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/pooja_reddy.kadari?igsh=M2xwMnhkZ2tla3ly">
-                    <img src="images/instagram.jpeg" alt="Instagram">
-                </a>
-                <a href="https://github.com/pooja0207k">
-                    <img src="images/GitHub-Mark-ea2971cee799.png" alt="GitHub">
-                </a>
-                <a href="https://x.com/Poojak0207?t=HBmo6BuDZt8xe3_pGvyyiw&s=09">
-                    <img src="images/twitter.png" alt="Twitter">
-                </a>
-            </div>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Pooja Reddy. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="mailto:poojak0207reddy@gmail.com">
+                <img src="images/gmail.png" alt="Gmail">
+            </a>
+            <a href="https://www.linkedin.com/in/pooja-reddy-b965891b1">
+                <img src="images/linkedin-icon-logo.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/pooja_reddy.kadari?igsh=M2xwMnhkZ2tla3ly">
+                <img src="images/instagram.jpeg" alt="Instagram">
+            </a>
+            <a href="https://github.com/pooja0207k">
+                <img src="images/GitHub-Mark-ea2971cee799.png" alt="GitHub">
+            </a>
+            <a href="https://x.com/Poojak0207?t=HBmo6BuDZt8xe3_pGvyyiw&s=09">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
